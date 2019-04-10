@@ -21,7 +21,7 @@ class Anagram
       binding.pry 
        temp_array.each_index.select{|i| temp_array[i] == sorted_word}
        temp_array.index.include?(sorted_word)
-  
+  a.index { |x| ['b', 'c'].include?(x) }
 
        if temp_array.include?(sorted_word)
          temp_index = temp_array.index 
