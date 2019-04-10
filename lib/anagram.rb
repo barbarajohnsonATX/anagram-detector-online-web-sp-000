@@ -17,7 +17,7 @@ class Anagram
        
     else 
        input.each  { |elem| temp_array << elem.chars.sort.join }
-       orted_word = @word.chars.sort.join
+       sorted_word = @word.chars.sort.join
 
        temp_array.each_index.select{|i| temp_array[i] == sorted_word}
        binding.pry
