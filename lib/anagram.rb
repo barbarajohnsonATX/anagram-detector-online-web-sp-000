@@ -20,7 +20,6 @@ class Anagram
        sorted_word = @word.chars.sort.join
 
        temp_array.each_index.select{|i| temp_array[i] == sorted_word}
-       binding.pry
        temp_array.index.include?(sorted_word)
      
 
