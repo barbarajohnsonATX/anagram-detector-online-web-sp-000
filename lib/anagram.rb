@@ -16,14 +16,12 @@ class Anagram
       matches_array << input 
        
     else 
-       input.each do |elem| 
-          temp_array << elem.chars.sort.join
-          binding.pry
-        end 
-        sorted_word = @word.chars.sort.join
+       input.each  { |elem| temp_array << elem.chars.sort.join }
+       sorted_word = @word.chars.sort.join
        if temp_array.include?(sorted_word)
+         binding.pry
          matches_array << @word
-    end 
+       end 
   end 
     return matches_array
     end 
