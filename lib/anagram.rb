@@ -19,7 +19,7 @@ class Anagram
        input.each  { |elem| temp_array << elem.chars.sort.join }
        sorted_word = @word.chars.sort.join
        if temp_array.include?(sorted_word)
-         matches_array << @word
+         matches_array << sorted_word
        end 
   end 
     return matches_array
