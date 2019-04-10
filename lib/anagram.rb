@@ -18,10 +18,9 @@ class Anagram
     else 
        input.each  { |elem| temp_array << elem.chars.sort.join }
        sorted_word = @word.chars.sort.join
-
+      binding.pry 
        temp_array.each_index.select{|i| temp_array[i] == sorted_word}
        temp_array.index.include?(sorted_word)
-        binding.pry    
   
 
        if temp_array.include?(sorted_word)
