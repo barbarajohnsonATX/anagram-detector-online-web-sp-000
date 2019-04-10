@@ -18,7 +18,7 @@ class Anagram
     else 
        input.each do |elem| 
           temp_array << elem.chars.sort.join
-          bnding.pry
+          binding.pry
         end 
         sorted_word = @word.chars.sort.join
        if temp_array.include?(sorted_word)
