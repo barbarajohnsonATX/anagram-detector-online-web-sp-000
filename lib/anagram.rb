@@ -11,23 +11,21 @@ class Anagram
   
   def match(input)
     matches_array = []
-    temp_array = []
+    sorted_array = []
     if input.include?(@word) 
       matches_array << input 
        
     else 
-       input.each  { |elem| temp_array << elem.chars.sort.join }
+       input.each  { |elem| sorted_array << elem.chars.sort.join }
        sorted_word = @word.chars.sort.join
-      binding.pry 
-       temp_array.each_index.select{|i| temp_array[i] == sorted_word}
-       temp_array.index.include?(sorted_word)
-  a.index { |x| ['b', 'c'].include?(x) }
-
-       if temp_array.include?(sorted_word)
-         temp_index = temp_array.index 
-         matches_array << sorted_word
-       end 
-  end 
+       
+       index = sorted_array.find_index(sorted_word)
+       if index != nil 
+          matches_array << input[index]
+        end 
+        
+    end 
+    
     return matches_array
     end 
       
