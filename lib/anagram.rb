@@ -28,7 +28,7 @@ class Anagram
            if index != nil 
              matches_array << input[index]
            end 
-        end 
+          
     end 
     
     return matches_array
