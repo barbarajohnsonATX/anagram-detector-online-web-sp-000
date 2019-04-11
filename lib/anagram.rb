@@ -14,10 +14,10 @@ class Anagram
     sorted_array = []
            temp_array = []
 
-    if input.include?(@word) 
-      matches_array << input 
+  #  if input.include?(@word) 
+  #    matches_array << input 
        
-    else 
+  #  else 
        input.each  { |elem| sorted_array << elem.chars.sort.join }
        sorted_word = @word.chars.sort.join
        
@@ -27,7 +27,7 @@ class Anagram
           end 
         end 
    
-    end 
+  #  end 
     
     return matches_array
     end 
