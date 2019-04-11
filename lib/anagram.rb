@@ -19,11 +19,12 @@ class Anagram
     else 
        input.each  { |elem| sorted_array << elem.chars.sort.join }
        sorted_word = @word.chars.sort.join
-       
+       temp_array 
        sorted_array.each do |val, index|
           #if val == sorted_word 
-            matches_array << input[index]
+            temp_array << input[index]
           #end 
+          binding.pry 
        end 
          
      #  index = sorted_array.find_index(sorted_word)
