@@ -21,9 +21,9 @@ class Anagram
        sorted_word = @word.chars.sort.join
        
        sorted_array.each do |val, index|
-          if val == sorted_word 
-            matches_array << input[index].to_s
-          end 
+          #if val == sorted_word 
+            matches_array << input[index]
+          #end 
        end 
          
      #  index = sorted_array.find_index(sorted_word)
