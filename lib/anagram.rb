@@ -24,6 +24,7 @@ class Anagram
           if val == sorted_word 
             matches_array << input[index]
          end 
+       end 
          
      #  index = sorted_array.find_index(sorted_word)
       # if index != nil 
