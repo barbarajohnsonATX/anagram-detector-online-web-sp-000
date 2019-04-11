@@ -28,7 +28,6 @@ class Anagram
            if index != nil 
              matches_array << input[index]
            end 
-          binding.pry
     end 
     
     return matches_array
