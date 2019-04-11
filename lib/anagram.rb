@@ -13,7 +13,7 @@ class Anagram
     matches_array = []
     sorted_array = []
 
-       input.each  { |elem| sorted_array << elem.chars.sort.join }
+       input.each  { |val| sorted_array << val.chars.sort.join }
        sorted_word = @word.chars.sort.join
        
         sorted_array.each_with_index do |val, index|
