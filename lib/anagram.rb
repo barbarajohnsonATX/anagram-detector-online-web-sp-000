@@ -22,7 +22,7 @@ class Anagram
        sorted_word = @word.chars.sort.join
        
         sorted_array.each_with_index do |val, index|
-          if val == sorted_array
+          if val == sorted_word 
             matches_array << input[index]
           end 
         end 
