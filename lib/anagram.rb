@@ -20,11 +20,11 @@ class Anagram
        input.each  { |elem| sorted_array << elem.chars.sort.join }
        sorted_word = @word.chars.sort.join
        
-       sorted_array.each do |val,index|
-         if val == sorted_word 
-            matches_array << input[index]
-          end 
-       end 
+       index = sorted_array.find_index(sorted_word)
+       if index != nil 
+          matches_array << input[index]
+        end 
+        
     end 
     
     return matches_array
