@@ -24,8 +24,7 @@ class Anagram
  
    
           
-        input.length.times do 
-          index = sorted_array.find_index(sorted_word)
+           index = sorted_array.find_index(sorted_word)
            if index != nil 
              matches_array << input[index]
            end 
