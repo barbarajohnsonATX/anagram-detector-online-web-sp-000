@@ -22,7 +22,7 @@ class Anagram
        sorted_word = @word.chars.sort.join
        
  
-   
+     binding.pry 
           
            index = sorted_array.find_index(sorted_word)
            if index != nil 
